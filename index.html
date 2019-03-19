@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Home</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+    <link rel="stylesheet" href="Stylesheets/index.css" type="text/css">
+
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pompiere" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+
+    <!-- Navbar -->
+    <nav class="white">
+  <div class="nav-wrapper">
+    <a href="index.html" class="brand-logo"><img src="Images/logo.png" alt="Logo"></a>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons black-text">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Webpages/project.html">Project</a></li>
+      <li><a href="Webpages/about.html">About Us</a></li>
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Webpages/project.html">Project</a></li>
+      <li><a href="Webpages/about.html">About Us</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="heading">
+  <h1>Opeating System</h1>
+</div>
+<div class="sub-heading">
+  <p>
+    An operating system (OS) is system software that manages computer hardware and software
+    resources and provides common services for computer programs.An Operating System acts as a
+    communication bridge (interface) between the user and computer hardware. The purpose of an
+    operating system is to provide a platform on which a user can execute programs in a convenient
+    and efficient manner.An operating system is a piece of software that manages the allocation of
+    computer hardware. The coordination of the hardware must be appropriate to ensure the correct
+    working of the computer system and to prevent user programs from interfering with the proper
+    working of the system.
+  </p>
+</div>
+<div class="type-heading">
+  <h2>Important functions of operating system are:</h2>
+</div>
+<center><div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="Images/.jpg">
+        <div class="caption center-align">
+          <h3>Security</h3>
+        </div>
+      </li>
+      <li>
+        <img src="Images/.jpg" >
+        <div class="caption left-align">
+          <h3>Device Management</h3>
+        </div>
+      </li>
+      <li>
+        <img src="Images/.jpg" >
+        <div class="caption right-align">
+          <h3>Processor Management</h3>
+        </div>
+      </li>
+      <li>
+        <img src="Images/.jpg" >
+        <div class="caption center-align">
+          <h3>Error Detection</h3>
+        </div>
+        <li>
+          <img src="Images/.jpg">
+          <div class="caption left-align">
+            <h3>Memory Management</h3>
+          </div>
+        </li>
+        <li>
+          <img src="Images/.jpg" >
+          <div class="caption right-align">
+            <h3>File Management</h3>
+          </div>
+        </li>
+      </li>
+    </ul>
+  </div></center>
+
+    <div class="heading-for-types">
+      <h2> Different types of Operating System are</h2>
+    </div>
+
+    <div class="container-services">
+      <div class="row">
+        <div class="col s12 m4 13 center-align">
+          <div class="card">
+            <div class="card-content">
+              <img src="Images/Windows.png">
+                <h5> Windows </h5>
+                <p> Microsoft Windows is a group of OSs manufactured by Microsoft. Windows is
+                    available in 32 and 64-bit versions and offers a graphical user interface
+                    (GUI), multitasking functionalities, virtual memory management capabilities,
+                     and support for several peripheral devices. </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4 13 center-align">
+          <div class="card">
+            <div class="card-content">
+              <img src="Images/Linux.png">
+                <h5> Linux </h5>
+                <p> Linux is one of popular version of UNIX operating System.
+                   It is open source as its source code is freely available. It
+                   is free to use. Linux was designed considering UNIX compatibility.
+                   Its functionality list is quite similar to that of UNIX. </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4 13 center-align">
+          <div class="card">
+            <div class="card-content">
+              <img src="Images/Mac.png">
+                <h5> macOS </h5>
+                <p> macOS  is a series of graphical operating systems developed and
+                    marketed by Apple Inc. since 2001. It is the primary operating system
+                    for Apple's Mac family of computers. Within the market of desktop, laptop
+                    and home computers, and by web usage, it is the second most widely used desktop OS,
+                    after Microsoft Windows </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+<!-- HTML for dark theme-->
+<!--<div class="container">
+        <span class="light">LIGHT</span>
+        <div class="button"></div>
+        <span class="dark">DARK</span>
+    </div>-->
+
+    <script>
+      $( document ).ready(function() {
+      console.log( "ready!" );
+      $(".button-collapse").sideNav();
+      });
+    </script>
+  <script>
+    $(document).ready(function(){
+    $('.slider').slider()
+    });
+  </script>
+
+
+<!-- Script for dark theme-->
+<!--<script type="text/javascript">
+      $(".container").on("click", () => {
+          $("body").toggleClass("dark-theme");
+      });
+  </script>-->
+  </body>
+</html>
