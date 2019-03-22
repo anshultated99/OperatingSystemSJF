@@ -69,7 +69,7 @@
             <center><button onclick="addHtmlTableRow()"class="btn waves-effect waves-light" type="submit" value="Submit" name="action">Add Values
 
             </button> </center>
-            <center><button onclick="sjfSolve()"class="btn waves-effect waves-light" type="submit" value="Submit" name="solve">Solve
+            <center><button id="Slvebtn" onclick="sjfSolve()"class="btn waves-effect waves-light" type="submit" value="Submit" name="solve">Solve
               <!--<a href="table.html">Solve</a>-->
             </button> </center>
             <script>
@@ -88,18 +88,35 @@
 
               <div ID="outputTableDiv">
                 <h1 id="t">The output of the process is as follows:</h1>
+                <h3 id="tile">SJF:</h3>
                 <table id="outputTable" class="centered">
                     <thead>
                       <tr>
                           <th>Process Name</th>
                           <th>Arrival Time</th>
                           <th>Burst Time</th>
+                          <th>Completion Time</th>
                           <th>Waiting Time</th>
                           <th>Turnaround Time</th>
                       </tr>
                     </thead>
                   </table>
                   <p class="avgOutput" id="avgot">gh</p>
+                
+                <h3 id="tile">FCFS:</h3>
+                <table id="outputTable2" class="centered">
+                    <thead>
+                      <tr>
+                        <th>Process Name</th>
+                        <th>Arrival Time</th>
+                        <th>Burst Time</th>
+                        <th>Completion Time</th>
+                        <th>Waiting Time</th>
+                        <th>Turnaround Time</th>
+                      </tr>
+                    </thead>
+                  </table>
+                  <p class="avgOutput" id="avgot2">gh</p>
               </div>
 
     </div>

@@ -158,7 +158,7 @@ button a {
 }
 
 #t{
-  font-size: 60px;
+  font-size: 30px;
   font-family:  'Pompiere', cursive;
   text-align: center;
   padding-top:20px;
@@ -170,4 +170,12 @@ button a {
   font-size:25px;
   padding:10px;
   margin:10px;
+}
+
+#tile{
+  font-size: 20px;
+  font-family:  'Pompiere', cursive;
+  text-align: left;
+  padding-top:15px;
+  margin-left:50px;
 }
