@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css?family=Pompiere" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+
 
 
 
@@ -87,8 +89,7 @@
               </table>
 
               <div ID="outputTableDiv">
-                <h1 id="t">The output of the process is as follows:</h1>
-                <h3 id="tile">SJF:</h3>
+                <h1 id="t">The output of SJF is as follows:</h1>
                 <table id="outputTable" class="centered">
                     <thead>
                       <tr>
@@ -102,8 +103,8 @@
                     </thead>
                   </table>
                   <p class="avgOutput" id="avgot">gh</p>
-                
-                <h3 id="tile">FCFS:</h3>
+
+                  <h1 id="t">The output of FCFS is as follows:</h1>
                 <table id="outputTable2" class="centered">
                     <thead>
                       <tr>
@@ -123,195 +124,8 @@
 
   </form>
 
-    <script>
-
-    </script>
-    <!--<script>
-    var rIndex,
-            table = document.getElementById("table");
-
-          var proName=[],proArrival=[],proBurst=[],proComplete=[],proWaiting=[],proTurnAround=[];
-          var ct;
-          var awt,ata;
-          var totwt=0,totta=0;
-          var timer;
-          var tempArr=[];
-          var currentIndexArr;
-            // check the empty input
-                 function checkEmptyInput()
-                 {
-                     var isEmpty = false,
-                         name = document.getElementById("name").value,
-                         arrivaltime = document.getElementById("arrivaltime").value,
-                         bursttime = document.getElementById("bursttime").value;
-
-                     if(name === ""){
-                         alert("Process Name Connot Be Empty");
-                         isEmpty = true;
-                     }
-                      if(arrivaltime === ""){
-                         alert("Arrival time Connot Be Empty");
-                         isEmpty = true;
-                     }
-                      if(bursttime === ""){
-                         alert("Burst time Connot Be Empty");
-                         isEmpty = true;
-                     }
-                     return isEmpty;
-                 }
-
-      //Add row
-      function addHtmlTableRow()
-      {
-        if(!checkEmptyInput()){
-        var newRow = table.insertRow(table.length),
-        cell1=newRow.insertCell(0),
-        cell2=newRow.insertCell(1),
-        cell3=newRow.insertCell(2),
-        name = document.getElementById("name").value,
-        arrivaltime = document.getElementById("arrivaltime").value,
-        bursttime = document.getElementById("bursttime").value;
-        proName.push(name);
-        proArrival.push(arrivaltime);
-        proBurst.push(bursttime);
-        document.getElementById("name").value="",
-        document.getElementById("arrivaltime").value="",
-        document.getElementById("bursttime").value="";
-        cell1.style.textAlign="center";
-        cell2.style.textAlign="center";
-        cell3.style.textAlign="center";
-        cell1.innerHTML = name;
-        cell2.innerHTML = arrivaltime;
-        cell3.innerHTML = bursttime;
-      }
-    }
-
-    /**function Test(){
-      //prodetails=prodetails.sort(function(a,b){return prodetails})
-  console.log(proName.toString());
-  console.log(proArrival.toString());
-  console.log(proBurst.toString());
-
-    atSort(proArrival,proBurst,proName);
-
-    calc(proBurst,0);
 
 
-    }
-
-    function calc(bt,currentIndexArr){
-
-      ct=ct+bt[0];
-      timer=bt[0];
-      for(var i=1;i<proArrival.length;i++){
-        if(proArrival[i]<timer)
-          tempArr.push(proArrival);
-      }
-      currentIndexArr=i;
-      makeAnArray(i,proBurst.length);
-      return calc(btSort(tempArr));
-    }
-
-    function makeAnArray(start,end,bt){
-      var newArr=[];
-      var naInd=0;
-      for(var i=start;i<end;i++){
-        newArr[naInd]=bt[i];
-        naInd++;
-      }
-      return newArr;
-    }
-
-    function atSort(at,bt,p){
-      var tempat,tempbt,tempP;
-      for(var i=0;  i<at.length;i++){
-        for(var j=0;j<at.length-1;j++){
-          if(at[j+1]<at[j]){
-            tempat=at[j+1];
-            tempbt=bt[j+1];
-            tempP=p[j+1];
-            at[j+1]=at[j];
-            bt[j+1]=bt[j];
-            p[j+1]=p[j];
-            at[j]=tempat;
-            bt[j]=tempbt;
-            p[j]=tempP;
-          }
-        }
-      }
-      proName=p;
-      proArrival=at;
-      proBurst=bt;
-    }
-
-    function btSort(bt){
-      var tempat,tempbt,tempP;
-      for(var i=0;  i<bt.length;i++){
-        for(var j=0;j<bt.length-1;j++){
-          if(bt[j+1]<bt[j]){
-            //tempat=at[j+1];
-            tempbt=bt[j+1];
-            //tempP=p[j+1];
-            //at[j+1]=at[j];
-            bt[j+1]=bt[j];
-            //p[j+1]=p[j];
-            //at[j]=tempat;
-            bt[j]=tempbt;
-            //p[j]=tempP;
-          }
-        }
-      }
-      return bt;
-    }**/
-
-    function sjfSolve(){
-      var et=[0],at=[0],n,i,j,temp,st=[0],ft=[0],wt=[0],ta=[0];
-
-
-    var pn=[],t=[];
-    //clrscr();
-    at=proArrival;
-    et=proBurst;
-    pn=proName;
-    for(var i=0; i<pn.length; i++)
-        for(var j=0; j<pn.length; j++)
-        {
-            if(et[i]<et[j])
-            {
-                temp=at[i];
-                at[i]=at[j];
-                at[j]=temp;
-                temp=et[i];
-                et[i]=et[j];
-                et[j]=temp;
-                t=pn[i];
-                pn[i]=pn[j];
-                pn[j]=t;
-            }
-        }
-    for(var i=0; i<pn.length; i++)
-    {
-        if(i==0)
-            st[i]=at[i];
-        else
-            st[i]=ft[i-1];
-        wt[i]=st[i]-at[i];
-        ft[i]=st[i]+et[i];
-        ta[i]=ft[i]-at[i];
-        totwt+=wt[i];
-        totta+=ta[i];
-    }
-    awt=totwt/n;
-    ata=totta/n;
-    proComplete=st;
-    proWaiting=wt;
-    proTurnAround=et;
-    console.log(ta.toString());
-    //console.log(ata);
-    }
-
-
-  </script>-->
 
     <!--Dark Theme Script-->
     <!--<script type="text/javascript">

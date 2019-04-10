@@ -44,6 +44,7 @@ nav a {
 }
 nav a:hover{
     color:black;
+    background-color: rgba(0,0,0,0.0) !important
 }
 nav a::before{
     content:'';
@@ -58,9 +59,7 @@ nav a:hover::before{
     width: 100%;
     transition: all ease-in-out 250ms;
 }
-.card-content img{
-  width:50%;
-}
+
 .container-services{
   padding:30px;
 }
@@ -83,5 +82,5 @@ li{
   display:inline-block;
 }
 li i{
-  padding:20px;
+  padding:10px;
 }
